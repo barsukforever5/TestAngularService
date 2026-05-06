@@ -25,6 +25,7 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> list() {
+        System.out.println("list is called in UserController");
         return service.findAll();
     }
 
