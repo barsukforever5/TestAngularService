@@ -3,8 +3,8 @@ podman rm angular-backend-app
 podman build -t angular-backend-image .
 podman run -d -p 8080:8080 --name angular-backend-app --network app-net angular-backend-image
 
-C:\WORK\Projects\TestMicroService\frontend> ng build
-cd C:\WORK\Projects\TestMicroService\frontend\dist\frontend
+C:\WORK\Projects\TestAngularService\frontend> ng build
+cd C:\WORK\Projects\TestAngularService\frontend\dist\frontend
 
 podman stop angular-frontend-app
 podman rm angular-frontend-app

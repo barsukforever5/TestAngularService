@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestMicroServiceApplication {
+public class TestAngularServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(TestMicroServiceApplication.class, args);
+        SpringApplication.run(TestAngularServiceApplication.class, args);
     }
 }
