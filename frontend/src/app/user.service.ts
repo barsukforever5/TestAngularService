@@ -6,12 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 
-  private api = 'http://localhost:8082/controller/users';
+  private api = 'http://localhost:8080/api/users';
 
   constructor(private http: HttpClient) {}
 
   getUsers() {
-    return this.http.get<any[]>(this.api);
+    return this.http.get<any[]>(`http://localhost:8080/api/users`);
   }
 
   createUser(user: any) {
